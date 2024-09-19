@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "name": "Peter Jason Quill",
+      "email": "peter.quill@email.com.br",
+      "password": "Senha12345"
+    },
+    {
+      "name": "Gamora Zen Whoberi Ben Titan",
+      "email": "gamora@email.com",
+      "password": "Senha123456"
+    },
+    {
+      "name": "Rocket Raccoon",
+      "email": "rocket.raccoon@email.com",
+      "password": "Senha1234567"
+    },
+    {
+      "name": "Groot",
+      "email": "groot@email.com.br",
+      "password": "Senha12345678"
+    },
+    {
+      "name": "Drax",
+      "email": "drax@email.com",
+      "password": "Senha123456789"
+    },
+    {
+      "name": "Yondu Udonta",
+      "email": "youndu@email.com.br",
+      "password": "Senha1234567890"
+    }
+  ]
+}
+
+  
