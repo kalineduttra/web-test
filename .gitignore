@@ -1,4 +1,3 @@
-node_modules/
-videos
-screenshots
-results
+node_modules
+cypress.env.json
+*/videos
