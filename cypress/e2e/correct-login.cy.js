@@ -4,7 +4,7 @@ describe('Login page', () => {
     cy.get('[data-test="login-button"]').click();
   })
     it('Fill in the login fields with valid data and authenticate the user on the page', () => {
-      cy.login('julie@email.com','Password123')
+      cy.login('anajulie@email.com','Password123')
       })
   })
 
