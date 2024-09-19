@@ -1,6 +1,5 @@
 describe('Api Adopet', () => {
-
-    it('Profile name', () => {
+    it('Verify username is present on /profile page response', () => {
         cy.request({
             method: 'GET',
             url: 'https://adopet-api-i8qu.onrender.com/adotante/perfil/2b8ba748-1c73-4038-bd21-e859d991d562',
