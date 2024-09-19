@@ -1,10 +1,11 @@
 describe('registration page', () => {
-  beforeEach(() =>{
-    cy.visit('https://adopet-frontend-cypress.vercel.app/')
+  beforeEach(() => {
+    cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.get('[data-test="register-button"]').click();
   })
-
-  it('fill in the form fields correctly to register a new user', () => {
-    cy.register('julie', 'julie@email.com', 'Password123')
+    it('fill in the form fields correctly to register a new user', () => {
+      cy.register('Ana','anajulie@email.com','Password123')
+     })
   })
-})
+
+  
