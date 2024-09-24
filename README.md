@@ -22,12 +22,3 @@ Important to have the tools installed
 or
 
 `npx cypress run` = test in headless mode
-
-
-
-
-
-
-
-Gera uma documentação dos testes automatizados com o pacote mochawesome, usar o Cypress Cloud para compartilhar documentação de testes em nuvem, criar um dublê de teste, 
-utilizar massa de dados na automação de testes, criar comandos personalizados para otimizar e organizar testes
