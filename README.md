@@ -17,8 +17,10 @@ Important to have the tools installed
 
 <h2>Usage</h2>
 
-`npx cypress open` = Open the project using the tool's GUI 
+Open the project using the Cypress GUI | `npx cypress open`
 
-or
-
-`npx cypress run` = test in headless mode
+or test in headless mode
+```
+npx cypress run
+npx cypress run --spec ".\cypress\e2e\correct-login.cy.js"
+```
