@@ -6,6 +6,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    baseUrl: 'https://adopet-frontend-cypress.vercel.app',
     video: true,
   },
 });

@@ -4,7 +4,17 @@
 
 **Given** that the user accessed the registration page, **when** the user fills in the registration data fields correctly **and** click on the "Cadastrar" button, **then** the system must register the user in Adopet
 
-**Business rules:** Email and password are mandatory fields for registration.
+**Business rules:** 
+<h4> Email and password are mandatory fields for registration. <h4>
+<h4> The password must contain at least one capital letter, one number and be between 6 and 15 characters long <h4>
+
+| Password size | Capital letter | Number |    Result   |
+|---------------|----------------|--------|-------------|
+|     < 6       |       Y        |   Y    |     Fail    |
+|     <= 6      |       Y        |   Y    |     Fail    |
+|  > 6 and < 15 |       Y        |   Y    |    Sucess   |
+|     >=15      |       Y        |   Y    |     Fail    |
+
 
 <h3>Scenario: Registration attempt fails</h3>
 
