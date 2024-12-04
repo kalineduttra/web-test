@@ -44,9 +44,10 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           spec: |
-            cypress/e2e/cadastro-sucesso.cy.js
-            cypress/e2e/login-clinica.cy.js
-            cypress/e2e/dashboard.cy.js
+            cypress/e2e/correct-login.cy.js
+            cypress/e2e/incorrect-registration.cy.js
+            cypress/e2e/registration-mass.cy.js
+            cypress/e2e/registration.cy.js
           wait-on: 'http://localhost:3000,http://localhost:8080'
           record: true
           parallel: true
