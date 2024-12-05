@@ -16,11 +16,10 @@ describe('registration page', () => {
     })
   })
 
-  context('Quando eu realizar o registro de forma incorreta', () => {
+  context('When I register incorrectly', () => {
     const passwordRequirements = "A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres"
     it('create account without filling in name', () => {
       cy.register(' ', Cypress.env('validEmail'),Cypress.env('validPassword'), Cypress.env('validPassword'))
-      cy.wait(5000)
     })    
     it('* fill in the name field incorrectly', () => {
       cy.register(Cypress.env('invalidName'), Cypress.env('validEmail'),Cypress.env('validPassword'), Cypress.env('validPassword'))
