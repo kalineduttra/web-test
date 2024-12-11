@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http://localhost:3000",
+    "start": "my-server -p 3000",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test": "start-server-and-test start http://localhost:3000 cy:run"
+    "test": "start-server-and-test start http://localhost:3030 cy:run"
   },
   "repository": {
     "type": "git",
