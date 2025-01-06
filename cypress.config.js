@@ -8,5 +8,7 @@ module.exports = defineConfig({
     },
     baseUrl: 'https://adopet-frontend-cypress.vercel.app',
     video: true,
+    viewportWidth: 1600,
+    viewportHeight: 711
   },
 });
