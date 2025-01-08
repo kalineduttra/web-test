@@ -2,9 +2,17 @@
 Cypress.Commands.add('login', (email, password) => { 
     cy.session([email, password], () => {
         cy.visit('/login')
-        cy.get('[data-test="input-loginEmail"]').type(Cypress.env(email));
-        cy.get('[data-test="input-loginPassword"]').type(Cypress.env(password));
-        cy.get('[data-test="submit-button"]').click(); 
+        cy.get('[data-test="input-loginEmail"]').type(Cypress.env('validEmail'));
+        cy.get('[data-test="input-loginPassword"]').type(Cypress.env('validPassword'));
+        cy.get('[data-test="submit-button"]').click();
+        //cy.url().should('contain', '/home')
+    },
+    {
+      validate() {
+        // Protected URLs should return a 40x http code if user is unauthorized,
+        // and by default this will cause cy.visit() to fail
+        cy.visit('/home')
+      },
     })
 })
 
