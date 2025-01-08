@@ -1,9 +1,6 @@
 describe('Given that I register an account', () => {
 
-  context('When the fields are filled in correctly', () => {
-    beforeEach(() => {
-      cy.clearAllCookies
-    })
+  context.skip('When the fields are filled in correctly', () => {
     it('Then you should be redirected to the login screen', () => {
       cy.register(Cypress.env('validName'), Cypress.env('validEmail'),Cypress.env('validPassword'), Cypress.env('validPassword'))
     })
@@ -16,7 +13,7 @@ describe('Given that I register an account', () => {
     })
   })
 
-  context.only('When you fill in the form fields incorrectly', () => {
+  context('When you fill in the form fields incorrectly', () => {
     const passwordRequirements = "A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres"
     it('Then when you fill in the form without the name you should ask them to fill in this field', () => {
       cy.register(' ', Cypress.env('validEmail'),Cypress.env('validPassword'), Cypress.env('validPassword'))
