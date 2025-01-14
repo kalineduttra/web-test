@@ -8,7 +8,7 @@ describe('Api Adopet', () => {
             expect(res.status).to.be.equal(200)
             expect(res.body).is.not.empty
             expect(res.body).to.have.property('perfil')
-            expect(res.body.perfil.nome).to.be.equal('Ana')
+            expect(res.body.perfil.nome).to.be.equal('monica')
             // PARALELIZAÇÃO DE TESTES EM UM AMBIENTE DE INTEGRAÇÃO CONTÍNUA
         })
     })
