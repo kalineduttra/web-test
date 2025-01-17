@@ -1,7 +1,6 @@
 describe('Dado que eu entre no meu perfil', () => {
     beforeEach(() => {
         cy.login()
-        //cy.visit('/home')
         cy.wait(5000)
         cy.get('.header__user').click()
     })
