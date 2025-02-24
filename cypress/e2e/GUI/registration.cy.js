@@ -51,5 +51,4 @@ describe('Given that I register an account', () => {
     })
   })
 })
-
-  
+ 
