@@ -7,9 +7,9 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'https://adopet-frontend-cypress.vercel.app',
-    defaultBrowser: 'chrome',
+    experimentalRunAllSpecs: true,
     video: true,
-    viewportWidth: 1600,
-    viewportHeight: 711
   },
+  viewportWidth: 1600,
+  viewportHeight: 715
 });

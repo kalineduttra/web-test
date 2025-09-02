@@ -36,3 +36,4 @@ describe('Given that the user accesses the login screen', () => {
     })
   })
 })
+

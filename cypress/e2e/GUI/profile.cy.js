@@ -1,8 +1,8 @@
 const {validEmail, validPassword, validName, phone} = Cypress.env()
 
 describe('Given I access my profile', () => {
-    context('When I update my profile data', () => {
-        it('Then it should successfully update the profile with the new data', () => {
+    context('When I change my profile picture,', () => {
+        it('Then it should change the image successfully.', () => {
             cy.signIn(validEmail, validPassword)
             cy.get('.header__user').click()
             cy.get('.button').click()
