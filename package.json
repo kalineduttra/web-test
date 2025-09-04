@@ -6,8 +6,6 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:api": "cypress run --spec cypress/e2e/API/*",
-    "cy:gui": "cypress run --spec cypress/e2e/GUI/*",
     "test": "cypress run --reporter nyan"
   },
   "repository": {
