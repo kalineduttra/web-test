@@ -5,7 +5,7 @@ on:
     branches: main
 
 jobs:
-  cypress-run-1:
+  cypress-run:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,21 +22,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          run: npm run cy:api
-    
-  cypress-run-2:
-      runs-on: ubuntu-latest
-
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
-        
-        - name: Write the cypress.env.json file 
-          run: |
-            echo '${{ secrets.CYPRESS_ENV_FILE }}' > cypress.env.json
-
-        - name: Cypress run
-          uses: cypress-io/github-action@v6
-          with:
-            start: npm start
-            command: npm run cy:gui
+          run: npm run cy:run
